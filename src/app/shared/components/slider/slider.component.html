@@ -1,0 +1,14 @@
+<div class="slider">
+  <div class="slider__wrap" *ngFor="let item of slides; let i = index"
+
+  >
+
+    <div id="img1" class="slide"
+         (click)="activeSlide = i"
+          [class.slide.active]="activeSlide === i"
+    >
+      <h3>Lorem ipsum.</h3>
+    </div>
+
+  </div>
+</div>

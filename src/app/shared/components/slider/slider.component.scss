@@ -1,0 +1,66 @@
+.slider {
+  background: var(--dark-color);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__wrap {
+    width: 100%;
+    display: flex;
+    padding: 0 20px;
+
+    #img1 {
+      background-image: url("https://i2.wp.com/laptopmedia.com/wp-content/uploads/2020/11/1599845493_dota-2-russia.png?ssl=1");
+    }
+
+    #img2 {
+      background-image: url("https://i2.wp.com/laptopmedia.com/wp-content/uploads/2020/11/1599845493_dota-2-russia.png?ssl=1");
+    }
+
+    #img3 {
+      background-image: url("https://i2.wp.com/laptopmedia.com/wp-content/uploads/2020/11/1599845493_dota-2-russia.png?ssl=1");
+    }
+
+    #img4 {
+      background-image: url("https://i2.wp.com/laptopmedia.com/wp-content/uploads/2020/11/1599845493_dota-2-russia.png?ssl=1");
+    }
+
+    #img5 {
+      background-image: url("https://i2.wp.com/laptopmedia.com/wp-content/uploads/2020/11/1599845493_dota-2-russia.png?ssl=1");
+    }
+
+    #img6 {
+      background-image: url("https://i2.wp.com/laptopmedia.com/wp-content/uploads/2020/11/1599845493_dota-2-russia.png?ssl=1");
+    }
+  }
+
+  .slide {
+    height: calc(83vh + 3px ) ;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 20px;
+    color: #fff;
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    transition: all 500ms ease-in-out;
+  }
+  .slide h3{
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    opacity: 0;
+  }
+
+  .slide.active{
+    flex: 10;
+  }
+
+  .slide.active h3{
+    opacity: 1;
+    transition: opacity 0.3s ease-in;
+  }
+}
